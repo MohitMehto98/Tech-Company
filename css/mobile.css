@@ -1,0 +1,173 @@
+/* for navbar  */
+.nav :first-child {
+  display: none;
+}
+
+#navbar,
+#navbar ul {
+  text-align: center;
+}
+
+#navbar ul li a {
+  padding: 5px;
+  border-left: 0.5px dotted black;
+}
+
+#navbar ul li:active {
+  background-color: grey;
+}
+
+.logo {
+  display: none;
+}
+/* for showcase */
+
+#showcase {
+  height: 500px;
+}
+
+.btn {
+  opacity: 1;
+}
+
+.btn:active {
+  background: black;
+  color: white;
+  opacity: 0.5;
+}
+
+#showcase h1 {
+  font-size: 30px;
+  padding: 1rem 5rem 0 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#showcase p {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* for about company section */
+
+.container {
+  display: block;
+}
+
+/* for design section */
+
+.design {
+  display: block;
+}
+
+.design button {
+  margin-bottom: 1rem;
+}
+
+.item-2 img {
+  width: 100%;
+  margin: auto;
+}
+
+/* for team members */
+
+.team_members {
+  display: block;
+}
+
+.team {
+  margin: 5rem 0 0 0;
+}
+
+.team p {
+  margin-top: 1rem;
+}
+
+.team_members img {
+  height: 250px;
+}
+
+.teams {
+  padding: 2rem;
+  margin: 1.8rem 2rem;
+}
+
+/* for information section */
+
+.information {
+  display: block;
+  text-align: center;
+}
+
+.info p {
+  margin-bottom: 1rem;
+}
+
+/* for work section */
+
+.work {
+  margin: 4rem 0;
+}
+
+.images {
+  display: block;
+  text-align: center;
+}
+
+.images img {
+  box-shadow: 0 0 5px black;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+/* for skills */
+
+.skills {
+  display: block;
+}
+
+.itemm-1 {
+  line-height: 1.5rem;
+  width: 90%;
+  text-align: justify;
+}
+
+.bar {
+  width: 90%;
+  margin: 0 1rem;
+}
+
+/* for pricing section */
+
+.section {
+  display: block;
+  margin: 2rem 2rem;
+}
+
+.basic h5,
+.premium h5 {
+  padding: 2rem 9rem;
+  text-align: center;
+}
+
+.pro h5 {
+  padding: 3rem 9rem;
+  text-align: center;
+}
+
+.sign button:active {
+  border-radius: 20px;
+  background: grey;
+  color: black;
+}
+
+/* for contact section */
+
+.form input {
+  width: 95%;
+}
+
+.contact button:active {
+  color: black;
+  background: grey;
+}

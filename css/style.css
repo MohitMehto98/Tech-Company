@@ -1,0 +1,545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f4f4f4;
+}
+
+/* for navbar */
+#navbar {
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  opacity: 1;
+  box-shadow: 0 -2px 10px black;
+  z-index: 1;
+}
+
+.logo span {
+  color: black;
+}
+
+.logo {
+  color: grey;
+  font-family:'Courier New', Courier, monospace;
+  padding:  1rem 0 1rem 2rem;
+  font-size: 2rem;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+#navbar ul li:hover {
+  background: #ddd;
+}
+
+#navbar ul li a:hover {
+  color: black;
+}
+
+/* for showcase */
+#showcase {
+  background: url("../image/mac.jpg") no-repeat center center/cover;
+  height: 100vh;
+}
+
+.showcase-content {
+  background: rgba(250, 250, 250, 0.1);
+  height: 100%;
+}
+
+.showcase-content h1 {
+  color: white;
+  font-weight: 1;
+  font-size: 60px;
+  padding: 10rem 0 0 3rem;
+}
+
+.showcase-content p {
+  color: white;
+  font-size: 1rem;
+  padding: 2rem 0 0 3rem;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  margin: 2rem 0 0 3rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.4;
+  font-size: 1rem;
+  background: black;
+  color: white;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+  opacity: 1;
+}
+
+.socials {
+  color: grey;
+  margin: 10rem 0 0 1.5rem;
+}
+
+/*for about company section*/
+
+.about_company {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.about_company h3 {
+  font-weight: lighter;
+  padding: 5rem 0 2rem 0;
+  font-size: 1.7rem;
+}
+
+.about_company p {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+}
+
+.items h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.items h3 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: lighter;
+}
+
+.items p {
+  text-align: justify;
+  margin: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem;
+}
+
+/* for design section */
+
+.design {
+  display: flex;
+  background: slategrey;
+  padding: 4rem;
+  margin: 10rem 0 2rem 0;
+}
+
+.item-1 {
+  margin: 5rem 0 0 1rem;
+  line-height: 1.5rem;
+  color: black;
+}
+
+.item-1 h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.item-1 p {
+  text-align: justify;
+}
+
+.item-2 img {
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.design button {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  font-size: 1rem;
+  background: black;
+  color: white;
+}
+
+.design button:hover {
+  background: grey;
+  color: black;
+  font-weight: bold;
+}
+
+/* for team */
+.team {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.team h4 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.team p {
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+/* for team members */
+
+.team_members {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.team_members img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.teams {
+  padding: 0.5rem;
+  margin: 1rem;
+  box-shadow: 0px 0px 10px grey;
+}
+
+.team_members h5 {
+  color: grey;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.teams p {
+  text-align: justify;
+}
+
+.btn-dark {
+  outline: none;
+  border: none;
+  background: rgb(212, 209, 209);
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+}
+
+.btn-dark:hover {
+  background: grey;
+}
+
+/* for information section */
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 0 2.5rem 0;
+  background: #333;
+  width: 100%;
+  color: white;
+  margin-top: 10rem;
+}
+
+.info h1 {
+  margin-bottom: 0.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* for work section */
+.work {
+  text-align: center;
+  margin: 10rem 0 4rem 0;
+}
+
+.work h2 {
+  margin-bottom: 1rem;
+  font-weight: lighter;
+}
+
+/* for image gallery */
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  margin: 0 2rem;
+}
+
+.images img {
+  width: 300px;
+}
+
+.phone:hover,
+.mic:hover,
+.typewritter:hover,
+.tablet:hover,
+.speaker:hover,
+.tech:hover,
+.camera:hover,
+.drone:hover {
+  opacity: 0.7;
+}
+
+/* for skills  */
+
+.skills {
+  display: flex;
+  background: #ddd;
+  margin: 4rem 0 0 0;
+}
+
+.itemm-1 {
+  width: 50%;
+  padding: 2rem;
+}
+
+.itemm-1 h2 {
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+.itemm-2 {
+  width: 50%;
+  margin-top: 5rem;
+  padding: 2rem;
+}
+
+/* for skill bar */
+
+.cont {
+  width: 100%;
+  background: #9b9292;
+  /* padding: 0.5rem; */
+  margin: 1.5rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.photograph {
+  width: 90%;
+  background: #575353;
+  padding: 0.3rem;
+  color: white;
+}
+.designed {
+  width: 85%;
+  background: #575353;
+  padding: 0.3rem;
+  color: white;
+}
+.photoshoped {
+  width: 70%;
+  background: #575353;
+  padding: 0.3rem;
+  color: white;
+}
+
+/* for pricing section */
+
+.pricing {
+  text-align: center;
+  background: #575353;
+  color: white;
+  padding: 10rem 0 6rem 0;
+}
+
+.pricing h4 {
+  font-weight: lighter;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details li {
+  list-style: none;
+}
+
+.basic h5,
+.premium h5 {
+  padding: 2rem 10rem;
+  background: black;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin-top: 6rem;
+}
+
+.pro h5 {
+  padding: 3rem 12rem;
+  background: tomato;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin-top: 4rem;
+}
+
+.details li {
+  padding: 1.5rem 2rem;
+  background: white;
+  color: black;
+  border-bottom: 1px dotted grey;
+}
+
+.price span {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+}
+
+.sign {
+  background: white;
+  color: black;
+  padding: 3rem 0;
+}
+
+.sign button {
+  outline: none;
+  border: none;
+  padding: 1.5rem 3rem;
+  background: black;
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.sign button:hover {
+  border-radius: 20px;
+  background: grey;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.dollar {
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.dollar-1 {
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-bottom: 1rem;
+}
+
+.light {
+  opacity: 0.7;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px dotted grey;
+  padding-bottom: 1.5rem;
+}
+
+/*for contact section */
+
+.contact {
+  padding: 10rem 0 8rem 0;
+}
+
+.contact h4 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.contact p {
+  text-align: center;
+  opacity: 0.9;
+  margin-bottom: 5rem;
+}
+
+.indicator {
+  margin-bottom: 2rem;
+}
+
+.indicator li {
+  list-style: none;
+  padding: 1rem 0.7rem;
+  font-weight: lighter;
+}
+
+.indicator li i {
+  font-size: xx-large;
+  margin-right: 1rem;
+}
+
+.form input {
+  display: inline-block;
+  width: 99%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 1.3rem;
+  margin: 0.5rem;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact button:hover {
+  color: black;
+  background: grey;
+  transition: all 0.3s ease;
+}
+
+/* for map */
+.map img {
+  width: 100%;
+  background: #ddd;
+}
+
+
+/* for footer  */
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.social {
+  text-align: center;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.social i:hover {
+  color: grey;
+}
+
+.right {
+  text-align: center;
+  font-weight: lighter;
+  font-family: cursive;
+  padding-bottom:2rem ;
+}

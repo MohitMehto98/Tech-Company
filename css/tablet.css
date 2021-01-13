@@ -1,0 +1,53 @@
+/* for team members  */
+.team_members {
+  display: inline-block;
+  width: 100%;
+}
+
+.team-1,
+.team-2 {
+  float: left;
+  width: 45%;
+  margin-left: 30px;
+}
+.team-3,
+.team-4 {
+  float: left;
+  width: 45%;
+  margin-left: 30px;
+}
+
+/* for work section */
+
+.images img {
+  width: 200px;
+}
+
+/* for pricing section */
+
+.basic h5,
+.premium h5 {
+  padding: 2rem 5rem;
+}
+
+.pro h5 {
+  padding: 3rem 10rem;
+}
+
+/* for  design section */
+
+.design {
+  display: block;
+}
+
+/* for about section  */
+
+.container {
+  display: block;
+  margin-bottom: 50rem;
+}
+
+.items {
+  float: left;
+  width: 49%;
+}
